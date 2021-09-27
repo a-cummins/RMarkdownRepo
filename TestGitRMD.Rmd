@@ -1,0 +1,56 @@
+---
+title: "Git and GitHub"
+author: "Amara Cummins"
+date: "`rformat(Sys.Date(), '%B %d, %Y')`"
+csl: apa.csl
+bibliography: refs.bib
+output: 
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    number_sections: TRUE
+    code_folding: show
+    code_download: TRUE
+---
+
+# Introduction
+In this section we will write an introduction.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE,
+                      cache=TRUE)
+## Cache = TRUE means that for any code chunk I do not change 
+## Use its stored data
+```
+
+```{r}
+summary(cars)
+```
+
+## Including Plots{.tabset .tabset-fade .tabset-pills}
+
+You can embed multiple plots for example
+
+```{r pressure, echo=FALSE, results='asis'}
+cat("### Pressure vs Temp {-}\n\n") # naming the tab
+plot(pressure) 
+cat("\n\n") # adding 2 line breaks after the plot
+
+cat("### Hist of Temp {-} \n\n")
+hist(pressure$temperature)
+cat("\n\n")
+
+cat("### Hist of Pressure {-} \n\n")
+hist(pressure$pressure)
+cat("\n\n")
+```
+
+## New Section
+Above gives you a new section that will not be tabbed. Example reference would look like this: @hazen2014data or like this [@hazen2014data]
+
+
+
+
+
+
+

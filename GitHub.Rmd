@@ -1,0 +1,19 @@
+---
+title: "Git and GitHub"
+author: "Amara Cummins"
+output: html_document
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE,
+                      cache=TRUE)
+## Cache = TRUE means that for any code chunk I do not change 
+## Use its stored data
+```
+
+```{r}
+summary(cars)
+```
+
+```{r}
+plot(pressure)
+```
